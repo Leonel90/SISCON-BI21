@@ -8,5 +8,9 @@ export default [
   {
     path: 'register',
     loadComponent: () => import('./register/register.component'),
+  },
+  {
+    path: '**',
+    redirectTo: 'login',
   }
 ] as Routes

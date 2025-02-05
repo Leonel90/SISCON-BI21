@@ -8,5 +8,9 @@ export const routes: Routes = [
   { /*Rutas Privadas */
     path: 'dashboard',
     loadComponent: () => import('./dashboard/dashboard.component')
+  },
+  {
+    path: '**',
+    redirectTo: 'dashboard',
   }
 ];
