@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './usuarios-c.component.html',
   styleUrl: './usuarios-c.component.css'
 })
-export class UsuariosCComponent {
+export default class UsuariosCComponent {
 
 }
