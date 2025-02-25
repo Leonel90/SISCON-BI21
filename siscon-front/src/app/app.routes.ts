@@ -15,6 +15,10 @@ export const routes: Routes = [
         loadChildren: () => import('./pages/pages.routes'),
       },
       {
+        path: 'auth',
+        loadChildren: () => import('./auth/auth.routes'),
+      },
+      {
         /*Rutas Privadas */
         path: '',
         redirectTo: 'dashboard',
@@ -23,7 +27,7 @@ export const routes: Routes = [
     ],
   },
   {
-      path: '**',
-      redirectTo: 'dashboard',
-  }
+    path: '**',
+    redirectTo: 'dashboard',
+  },
 ];
